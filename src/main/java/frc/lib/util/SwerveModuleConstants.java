@@ -3,9 +3,9 @@ package frc.lib.util;
 import edu.wpi.first.math.geometry.Rotation2d;
 
 public class SwerveModuleConstants {
-    public final int driveMotorID;
-    public final int angleMotorID;
-    public final int cancoderID;
+    public final int DRIVE_MOTOR_ID;
+    public final int ANGLE_MOTOR_ID;
+    public final int ABS_ENCIDER_PORT;
     public final Rotation2d angleOffset;
 
     /**
@@ -16,9 +16,9 @@ public class SwerveModuleConstants {
      * @param angleOffset
      */
     public SwerveModuleConstants(int driveMotorID, int angleMotorID, int canCoderID, Rotation2d angleOffset) {
-        this.driveMotorID = driveMotorID;
-        this.angleMotorID = angleMotorID;
-        this.cancoderID = canCoderID;
+        this.DRIVE_MOTOR_ID = driveMotorID;
+        this.ANGLE_MOTOR_ID = angleMotorID;
+        this.ABS_ENCIDER_PORT = canCoderID;
         this.angleOffset = angleOffset;
     }
 }
